@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,
+            //スクロール方向を逆転,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -132,10 +132,10 @@
 
         MARK {
             bindings = <
-&kp EXCLAMATION  &kp AT                &kp HASH               &kp DOLLAR        &kp PERCENT                          &kp CARET         &kp AMPERSAND      &kp ASTERISK          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp GRAVE        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET                    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp NON_US_BACKSLASH  &kp EQUAL             &kp MINUS
-&trans           &kp LG(X)             &kp LG(C)              &kp LG(V)         &kp LG(B)                            &kp LG(W)         &kp LG(LS(T))      &kp LS(LC(EQUAL))     &kp SQT               &kp BACKSLASH
-&trans           &trans                &trans                 &trans            &trans             &trans    &trans  &trans                               &trans                &trans                &trans
+&kp EXCLAMATION  &kp AT                &kp HASH               &kp DOLLAR        &kp PERCENT                          &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp GRAVE        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET                    &mkp MB3   &mkp MB1       &mkp MB2      &kp EQUAL             &kp MINUS
+&trans           &kp LG(X)             &kp LG(C)              &kp LG(V)         &kp LG(B)                            &trans     &trans         &trans        &kp SQT               &kp BACKSLASH
+&trans           &trans                &trans                 &trans            &trans             &trans    &trans  &trans                    &trans        &trans                &trans
             >;
 
             sensor-bindings = <&re_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -169,10 +169,10 @@
 
         SCROLL {
             bindings = <
-&trans    &kp LC(LG(LEFT_ARROW))  &kp UP_ARROW  &kp LC(LG(RIGHT_ARROW))  &trans                    &kp KP_MULTIPLY  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS
-&trans    &kp LEFT_ARROW          &kp DOWN      &kp RIGHT_ARROW          &trans                    &kp KP_SLASH     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
-&kp HOME  &kp PAGE_DOWN           &kp END       &kp PAGE_UP              &trans                    &kp UNDER        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ENTER
-&trans    &trans                  &trans        &trans                   &trans  &trans    &trans  &kp NUMBER_0                   &kp NUMBER_0  &kp DOT       &kp QUESTION
+&trans  &kp LC(LG(LEFT_ARROW))  &kp UP_ARROW  &kp LC(LG(RIGHT_ARROW))  &trans                    &trans  &trans        &kp RG(UP_ARROW)    &trans         &trans
+&trans  &kp LEFT_ARROW          &kp DOWN      &kp RIGHT_ARROW          &trans                    &trans  &kp RG(LEFT)  &kp RG(DOWN_ARROW)  &kp RG(RIGHT)  &trans
+&trans  &trans                  &trans        &trans                   &trans                    &trans  &trans        &trans              &trans         &trans
+&trans  &trans                  &trans        &trans                   &trans  &trans    &trans  &trans                &trans              &trans         &trans
             >;
 
             sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
