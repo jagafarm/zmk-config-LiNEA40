@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,
+            //スクロール方向を逆転,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -84,6 +84,11 @@
         Hankaku {
             bindings = <&kp LC(SPACE)>;
             key-positions = <30 34>;
+        };
+
+        Voice {
+            bindings = <&kp GLOBE>;
+            key-positions = <34 37>;
         };
     };
 
